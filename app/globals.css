@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f5f8f3;
+  --ink: #132a1d;
+  --muted: #587066;
+  --card: #ffffff;
+  --mint: #dff4dd;
+  --lime: #cfe857;
+  --sage: #bfd0c5;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(115deg, rgba(223, 244, 221, 0.8) 0%, rgba(223, 244, 221, 0) 42%),
+    linear-gradient(300deg, rgba(207, 232, 87, 0.13) 0%, rgba(207, 232, 87, 0) 36%),
+    repeating-linear-gradient(0deg, rgba(19, 42, 29, 0.018) 0 1px, transparent 1px 28px);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button-primary,
+.button-secondary,
+.card,
+.chip {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 1rem;
+  background: #152d21;
+  color: white;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bfd0c5;
+  border-radius: 1rem;
+  background: white;
+  color: #132a1d;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #dfeae2;
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+  box-shadow: 0 10px 30px rgba(18, 42, 29, 0.04);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dce7df;
+  border-radius: 9999px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.button-primary:hover,
+.button-secondary:hover,
+.chip:hover {
+  transform: translateY(-1px);
+}
