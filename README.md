@@ -19,24 +19,5 @@ npm run dev
 
 Then open http://localhost:3000.
 
-## API routes
+![image alt]()
 
-- POST /api/health
-- POST /api/session
-- POST /api/catalog-match
-- POST /api/receipt
-- POST /api/optimize
-- POST /api/explain
-- POST /api/feedback
-
-## Required environment variables
-
-```env
-OPENAI_API_KEY=
-OPENAI_MODEL=gpt-4o-mini
-OPENAI_VISION_MODEL=gpt-4o-mini
-NEXT_PUBLIC_APP_CURRENCY=USD
-APP_SESSION_SECRET=development-secret
-```
-
-The app works without a live OpenAI key because the server falls back to deterministic explanations and manual receipt entry. The API key is still kept in environment variables, as requested.
