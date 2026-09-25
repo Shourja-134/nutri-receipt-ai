@@ -17,7 +17,8 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Then open http://localhost:3000.
+Then open : http://localhost:3000.
+Remote Host: https://nutri-receipt-ai.vercel.app/
 
 ![image alt](https://github.com/Shourja-134/nutri-receipt-ai/blob/c386e66212b385f49cc7097ec1f6bcf24586e078/Nutri_1.png)
 
